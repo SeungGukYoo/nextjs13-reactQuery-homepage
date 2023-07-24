@@ -1,22 +1,7 @@
 import Item from "@/components/item";
+import type { IData } from "@/types";
 import React from "react";
-export interface IData {
-  category: string;
-  description: string;
-  id: number;
-  image: string;
-  price: number;
-  rating: { rate: number; count: number };
-  title: string;
-}
-
-async function getItems(): Promise<IData[]> {
-  const res = await fetch("https://fakestoreapi.com/products?limit=1");
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return res.json();
-}
+import { getItems } from "./getItem";
 
 async function ItemList() {
   const result: IData[] = await getItems();

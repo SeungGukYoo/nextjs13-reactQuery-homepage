@@ -34,7 +34,6 @@ function Login() {
   return (
     <div className="">
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
-        {/* <form className="flex flex-col" onSubmit={subm}> */}
         <label>ID:</label>
         <input type="text" className=" text-black block" {...register("id", { required: "This is required ID" })} />
 

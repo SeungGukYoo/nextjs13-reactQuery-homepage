@@ -1,10 +1,7 @@
 "use client";
-import ItemList from "@/app/items/page";
-import UserContext from "@/context/userInfo";
-import React, { useContext } from "react";
 
-import Login from "./login";
-import Profile from "./profile";
+import ItemList from "@/app/items/page";
+import React from "react";
 import Side from "./side";
 
 function Main() {

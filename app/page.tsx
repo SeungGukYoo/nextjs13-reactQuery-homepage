@@ -1,4 +1,3 @@
-"use client";
 import GlobalFooter from "@/components/globalFooter";
 import GlobalNav from "@/components/globalNav";
 
